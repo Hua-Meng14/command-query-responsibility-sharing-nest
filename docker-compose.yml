@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  postgres:
+    container_name: nest_cqrs
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=nest-crqs
+    ports:
+      - 5432
+    volumes:
+      - /data/postgres/
+    networks:
+      - microservice-network
+
+networks:
+  microservice-network:
+    driver: bridge
