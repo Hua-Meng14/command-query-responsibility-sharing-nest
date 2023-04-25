@@ -11,7 +11,7 @@ import { PersonModule } from './person/person.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'gmhua',
+      password: '123',
       database: 'nest-cqrs',
 
       // username: process.env.POSTGRES_USERNAME,
